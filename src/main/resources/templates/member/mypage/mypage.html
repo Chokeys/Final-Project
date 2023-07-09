@@ -13,7 +13,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" />
   <link href="https://fonts.googleapis.com/css2?family=DynaPuff&family=Permanent+Marker&display=swap"
     rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500&display=swap" rel="stylesheet"> 
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500&display=swap" rel="stylesheet">
   <!--Bootstrap 용 CSS-->
   <link rel="stylesheet" th:href="@{/css/bootstrap.min.css}" />
   <!--CSS-->
@@ -67,10 +67,9 @@
       color: black;
     }
 
-    .side_one:hover{
+    .side_one:hover {
       background-color: honeydew;
     }
-
   </style>
 </head>
 
@@ -80,36 +79,48 @@
 
   <!--main 영역-->
   <div id="body-wrapper">
-    <div id="body-content"  class="container">
+    <div id="body-content" class="container">
       <div class="row">
         <!--left-->
-        <div class="col-sm-3" style="width: 250px; left: 0; height: 800px; border: 1px solid rgba(199, 196, 196, 0.466);">
+        <div class="col-sm-3"
+          style="width: 250px; left: 0; height: 800px; border: 1px solid rgba(199, 196, 196, 0.466);">
           <div class="sidevar">
-              <div class="sidevar-menu">
-                  <ul style="padding-left : 5px; padding-right: 5px; padding-top: 20px;">
-                      <span>※ 마이페이지</span>
-                      <hr style="border: 0.5px solid rgb(0, 0, 0); margin-top: 10px;"/>
-                      <li style="list-style: none;" class="side_one"><a th:href="@{mypage.do(menu=1,page=1)}" style="text-decoration: none; color: black; font-weight: bold; font-size: medium;">신청 내역</a></li>
-                      <hr/>
-                      <li style="list-style: none;" class="side_one"><a th:href="@{mypage.do(menu=2,page=1)}" style="text-decoration: none; color: black; font-weight: bold; font-size: medium;">리뷰 내역</a></li>
-                      <hr/>
-                      <li style="list-style: none;" class="side_one"><a th:href="@{mypage.do(menu=3,page=1)}" style="text-decoration: none; color: black; font-weight: bold; font-size: medium;">문의 내역</a></li>
-                      <hr/>
-                      <li style="list-style: none;" class="side_one"><a class="opener" data-bs-toggle="collapse" href="#collapseExample" role="button"style= "text-decoration: none; color: black; font-weight: bold; font-size: medium;"
-                        aria-expanded="false" aria-controls="collapseExample">계정 설정<span
-                        style="margin-left: 115px; font-size: 1rem; font-weight: bold; color: rgba(0,0,0,0.4);">
-                        ∨</span></a></li>
-                        <ul class="collapse" id="collapseExample" style="list-style: none; padding-left: 10px;">
-                          <li><a th:href="@{mypage.do(menu=4)}" style=" font-size: 0.8rem; font-weight: bold; color: rgba(0,0,0,0.4);  text-decoration: none;">나의 정보</a></li>
-                          <li>
-                            <a th:href="@{mypage.do(menu=5)}" style=" font-size: 0.8rem; font-weight: bold; color: rgba(0,0,0,0.4);  text-decoration: none;">비밀번호 변경</a>
-                          </li>
-                          <li><a th:href="@{mypage.do(menu=6)}" style=" font-size: 0.8rem; font-weight: bold; color: rgba(0,0,0,0.4);  text-decoration: none;">회원 탈퇴</a></li>
-                        </ul>
-                    </ul>
-              </div>
+            <div class="sidevar-menu">
+              <ul style="padding-left : 5px; padding-right: 5px; padding-top: 20px;">
+                <span>※ 마이페이지 </span>
+                <hr style="border: 0.5px solid rgb(0, 0, 0); margin-top: 10px;" />
+                <li style="list-style: none;" class="side_one"><a th:href="@{mypage.do(menu=1,page=1)}"
+                    style="text-decoration: none; color: black; font-weight: bold; font-size: medium;">신청 내역</a></li>
+                <hr />
+                <li style="list-style: none;" class="side_one"><a th:href="@{mypage.do(menu=2,page=1)}"
+                    style="text-decoration: none; color: black; font-weight: bold; font-size: medium;">리뷰 내역</a></li>
+                <hr />
+                <li style="list-style: none;" class="side_one"><a th:href="@{mypage.do(menu=3,page=1)}"
+                    style="text-decoration: none; color: black; font-weight: bold; font-size: medium;">문의 내역</a></li>
+                <hr />
+                <li style="list-style: none;" class="side_one"><a class="opener" data-bs-toggle="collapse"
+                    href="#collapseExample" role="button"
+                    style="text-decoration: none; color: black; font-weight: bold; font-size: medium;"
+                    aria-expanded="false" aria-controls="collapseExample">계정 설정<span
+                      style="margin-left: 115px; font-size: 1rem; font-weight: bold; color: rgba(0,0,0,0.4);">
+                      ∨</span></a></li>
+                <ul class="collapse" id="collapseExample" style="list-style: none; padding-left: 10px;">
+                  <li><a th:href="@{mypage.do(menu=4)}"
+                      style=" font-size: 0.8rem; font-weight: bold; color: rgba(0,0,0,0.4);  text-decoration: none;">나의
+                      정보</a></li>
+                  <li>
+                    <a th:href="@{mypage.do(menu=5)}"
+                      style=" font-size: 0.8rem; font-weight: bold; color: rgba(0,0,0,0.4);  text-decoration: none;">비밀번호
+                      변경</a>
+                  </li>
+                  <li><a th:href="@{mypage.do(menu=6)}"
+                      style=" font-size: 0.8rem; font-weight: bold; color: rgba(0,0,0,0.4);  text-decoration: none;">회원
+                      탈퇴</a></li>
+                </ul>
+              </ul>
+            </div>
           </div>
-      </div> 
+        </div>
         <!--right-->
 
         <th:block th:if="${#strings.equals(param.menu, '1')}">
