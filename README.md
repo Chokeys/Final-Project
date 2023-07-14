@@ -283,7 +283,7 @@
 
 <img src="https://github.com/Chokeys/Specialday/blob/main/src/main/resources/static/portfolio/7-1. 신청 내역 조회(상세보기).gif?raw=true" width="100%"/><br/><br/>
 - Pagination을 이용하여 내가 신청한 클래스를 결제완료, 결제취소, 참여완료에 따라 조회
-- 결제상태에 따라 상세보기시 나오는 결제내역 변경(신청취소시 취소정보 표시)
+- 결제상태에 따라 상세보기시 나오는 결제내역 변경(신청취소시 취소정보 표시)(비동기 방식)
 
 ## &nbsp;&nbsp;7-2. 리뷰 작성
 
